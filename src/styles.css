@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+
+body {
+  margin: 30px;
+  padding: 0px;
+  font-family: "Heebot", sans-serif;
+}
+
+.sign_in {
+  width: 295px;
+  height: 600px;
+  background-color: #f8f8f8;
+  border-radius: 40px;
+  box-shadow: 15px 15px 20px grey, 1px 1px 10px #f8f8f8 inset;
+}
+
+.sign_in .title {
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.login_e,
+.login_p {
+  background-color: white;
+  margin: 0px 26px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  opacity: 40%;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: text;
+}
+
+.login_p {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.forget {
+  margin: 0px 26px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+  color: #e2283e;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.remember {
+  margin: 0px 26px 48px 26px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 40%;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+label.click-here::before {
+  color: #f8f8f8;
+  border: 1px solid grey;
+  content: "\f0c8";
+  font-family: "Font Awesome 5 Free";
+  cursor: pointer;
+}
+
+input#check-here + label.click-here:before {
+  background-color: red;
+  color: #f8f8f8;
+  content: "\f14a";
+  cursor: pointer;
+}
+
+input#check-here {
+  display: none;
+}
+
+.red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 26px 26px 15px 26px;
+  padding: 10px;
+  background-color: #e2283e;
+  border-radius: 50px;
+  font-size: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.or {
+  margin: 30px 26px;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.sns {
+  margin: 30px 26px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  color: white;
+  font-size: 10px;
+}
+
+.sns .navy {
+  padding: 10px 35px;
+  border-radius: 50px;
+  background-color: #475a95;
+  cursor: pointer;
+}
+
+.sns .blue {
+  padding: 10px 38px;
+  border-radius: 50px;
+  background-color: #5da1f2;
+  cursor: pointer;
+}
+
+.help {
+  margin: 34px 26px;
+  font-size: 10px;
+  font-weight: 700;
+  color: grey;
+  opacity: 70%;
+}
+
+.help .answer_1,
+.answer_2 {
+  padding-left: 1px;
+  color: #e2283e;
+  cursor: pointer;
+}
+
+.help .question_2,
+.answer_2 {
+  padding-top: 5px;
+}
