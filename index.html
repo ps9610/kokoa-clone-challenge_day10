@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
@@ -17,14 +17,18 @@
       <header class="title">
         <h4>Sign in</h4>
       </header>
-      <div class="login_e">email</div>
-      <div class="login_p">password</div>
-      <div class="forget">Forgot Password?</div>
+      <div class="login_e">
+        <input type="email" id="email" placeholder="email" />
+      </div>
+      <div class="login_p">
+        <input type="password" id="password" placeholder="password" />
+      </div>
+      <div class="forget-box">
+        <div class="forget">Forgot Password?</div>
+      </div>
       <div class="remember">
-        <input type="checkbox" id="check-here" />
-        <label for="check-here" class="click-here">
-          Remember Me
-        </label>
+        <input id="remember_me" type="checkbox" />
+        <label for="remember_me">Remember Me</label>
       </div>
       <div class="red">Sign in</div>
       <div class="or">OR</div>

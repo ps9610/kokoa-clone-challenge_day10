@@ -27,11 +27,21 @@ body {
   margin: 0px 26px;
   border: 1px solid grey;
   border-radius: 7px;
-  opacity: 40%;
   padding: 10px;
   font-size: 10px;
   font-weight: 700;
   cursor: text;
+  text-decoration: none;
+}
+
+input[type="email"],
+input[type="password"] {
+  margin: 0px;
+  font-size: 12px;
+  border: none;
+  background: none;
+  outline: 0px;
+  width: 100%;
 }
 
 .login_p {
@@ -39,14 +49,16 @@ body {
   margin-bottom: 15px;
 }
 
-.forget {
+.forget-box {
   margin: 0px 26px;
-  padding-bottom: 15px;
   display: flex;
   justify-content: flex-end;
   color: #e2283e;
   font-size: 10px;
   font-weight: 700;
+}
+
+.forget {
   cursor: pointer;
 }
 
@@ -57,26 +69,34 @@ body {
   justify-content: flex-start;
   align-items: center;
   opacity: 40%;
-  font-weight: 700;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: 600;
 }
 
-label.click-here::before {
-  color: #f8f8f8;
-  border: 1px solid grey;
+input[type="checkbox"] + label:before {
   content: "\f0c8";
   font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  margin-right: 5px;
   cursor: pointer;
 }
 
-input#check-here + label.click-here:before {
-  background-color: red;
-  color: #f8f8f8;
-  content: "\f14a";
+input[type="checkbox"]:checked + label:before {
+  content: "\f00c";
+  font-weight: 900;
+  color: red;
   cursor: pointer;
 }
 
-input#check-here {
+/* 66번째 줄~79번째 줄 주의사항
+
+1. content:"\유니코드" 반드시 입력
+2. font-family  반드시 입력
+-> 현재 최신 업그레이드 버전으로 입력할 것
+3. font-weight 반드시 입력
+-> Solid: 900 / Regular(Brands): 400 / Light: 300  */
+
+input[type="checkbox"] {
   display: none;
 }
 
