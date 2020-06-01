@@ -88,6 +88,10 @@ input[type="checkbox"]:checked + label:before {
   cursor: pointer;
 }
 
+label {
+  cursor: pointer;
+}
+
 /* 66번째 줄~79번째 줄 주의사항
 
 1. content:"\유니코드" 반드시 입력
